@@ -17,7 +17,7 @@
       font-size: 1.3em;
 
       th {
-        border-bottom: 4px solid #50B83C;
+        border-bottom: 4px solid #50b83c;
         padding-bottom: 0.5em;
       }
     }
@@ -26,11 +26,13 @@
       tr {
         td {
           padding: 0.7em 0;
-          border-bottom: 1px dashed #BBE5B3;
+          border-bottom: 1px dashed #bbe5b3;
         }
+
         .column--id {
           font-weight: bold;
         }
+
         .column--no-results {
           text-align: center;
         }
