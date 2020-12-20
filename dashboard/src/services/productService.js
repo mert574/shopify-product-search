@@ -3,7 +3,7 @@ import querystring from 'querystring';
 
 class ProductService extends ApiService {
     constructor() {
-        super('http://localhost:8080/product');
+        super(process.env.REACT_APP_API_URL);
     }
 
     listProducts(page, pageSize) {
