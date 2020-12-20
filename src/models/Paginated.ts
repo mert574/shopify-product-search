@@ -20,6 +20,11 @@ export default class Paginated<T> {
     }
 
     static buildPage<T>(results: T[], page: number, pageSize: number): Paginated<T> {
+        const availablePages = Math.ceil(results.length / pageSize);
+        if (page > availablePages) {
+            page = availablePages;
+        }
+
         const currentIndex = (page - 1) * pageSize;
         const selectedPage = results.slice(currentIndex, currentIndex + pageSize);
         return Paginated.of(selectedPage, page, pageSize, results.length);
