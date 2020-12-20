@@ -13,7 +13,7 @@ router.get('/',
 
 router.get('/search',
     ensurePaginatedRequestFactory(),
-    query('keyword', 'keyword must be a non-empty string').notEmpty(),
+    query('keyword').default(''),
     ensureNoValidationError,
     productController.searchProducts);
 
