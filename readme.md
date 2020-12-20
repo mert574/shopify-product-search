@@ -31,6 +31,8 @@ docker run --rm -it -p 8080:8080 --init --env-file ./.env shopify-search
 curl 'http://localhost:8080/product/search?keyword=awesome&pageSize=3' | jq '.'
 ```
 
+**UPDATE**: Now you can use the dashboard. Just go to http://localhost:8080 and consume the API using the UI.
+
 Response should look like:
 ```json
 {

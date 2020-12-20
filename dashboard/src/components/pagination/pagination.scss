@@ -1,0 +1,31 @@
+.pagination {
+  &--display {
+    margin-left: 1em;
+  }
+
+  &--button {
+    font-weight: 900;
+    padding: 1em 1.2em;
+    border: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #30475e;
+    transition: transform 200ms, background-color 200ms;
+
+    &:disabled {
+      background-color: #3c4043;
+    }
+
+    &:not(:disabled) {
+      &:hover {
+
+        background-color: #476e96;
+        cursor: pointer;
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

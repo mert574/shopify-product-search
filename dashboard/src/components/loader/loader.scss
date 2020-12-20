@@ -1,0 +1,30 @@
+.loader {
+  $size: 5em;
+  $color: #ffffff;
+  $speed: 0.35s;
+
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+  margin: 0 auto;
+  border: 0.6em solid transparentize($color, 0.5);
+  border-left-color: $color;
+  animation: spin $speed infinite linear;
+  position: absolute;
+  left: calc(50% - #{$size / 2});
+  top: calc(50% - #{$size / 2});
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

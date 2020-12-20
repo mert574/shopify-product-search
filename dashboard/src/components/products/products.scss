@@ -1,0 +1,40 @@
+.products {
+  position: relative;
+  padding: 2em 1.5em;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #108043;
+  color: #ffffff;
+  border-radius: 3px;
+
+  table {
+    width: 100%;
+    text-align: left;
+
+    thead {
+      font-weight: 900;
+      font-size: 1.3em;
+
+      th {
+        border-bottom: 4px solid #50B83C;
+        padding-bottom: 0.5em;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 0.7em 0;
+          border-bottom: 1px dashed #BBE5B3;
+        }
+        .column--id {
+          font-weight: bold;
+        }
+        .column--no-results {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

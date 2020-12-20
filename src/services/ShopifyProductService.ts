@@ -10,7 +10,7 @@ class ShopifyProductService {
     private cache: CacheClient<Product[]>;
     private fields;
 
-    constructor(fields = [ 'id', 'title' ], cacheTTLMs = 35_000) {
+    constructor(fields = [ 'id', 'title' ], cacheTTLMs = 350_000) {
         this.client = new ShopifyProductClient(
             // @ts-expect-error environment variables are expected to be set
             process.env.SHOPIFY_SHOP,
